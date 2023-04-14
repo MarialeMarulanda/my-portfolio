@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ale Maru - Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Ale Maru
+          <div class="contact_info">
+            <img
+              src="envelope.png"
+              alt="https://icons8.com/icon/124377/circled-envelope"
+            />
+            ale_maru@marumail.com
+          </div>
+          <div style="clear: both"></div>
+          <div class="contact_info">
+            <img
+              src="phone.png"
+              alt="https://icons8.com/icon/124377/circled-envelope"
+            />
+            +1 (234)567-8901
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projets">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="yyoatiCP.jpg" class="profile_image" />
+      </div>
+
+      <div>
+        <h1>
+          Hi, I'm Ale Maru!
+          <img src="HolaAle.jpg" width="100px" />
+        </h1>
+        <p>
+          I would like to be a fullstack developer and that is the reason why I
+          am taking some IBM courses on Coursera. <br />I like to code, so this
+          is a good experience for me. <br />
+          Me and my boyfriend, we have an objective we hope to achieve with this
+          knowledge.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear: both"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html5.png" />
+          <h5>HTML</h5>
+          <p>beginner</p>
+        </div>
+
+        <div class="skill">
+          <img src="js.jpeg" />
+          <h5>JavaScript</h5>
+          <p>beginner</p>
+        </div>
+
+        <div class="skill">
+          <img src="CSS3.png" />
+          <h5>CSS</h5>
+          <p>beginner</p>
+        </div>
+
+        <div class="skill">
+          <img src="IconoDeC.png" />
+          <h5>C</h5>
+          <p>2 year experience</p>
+        </div>
+
+        <!-- Add more skills here -->
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear: both"></div>
+
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Unit converter</h3>
+          <ul>
+            <li>
+              Developed a secure website integrated with an unit converter,
+              which converted Farenheit to Celcius, Kilograms to Pounds and
+              Kilometers to miles. For this project, HTML, CSS and JavaScript
+              were used.
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>Siple interest calculator</h3>
+          <ul>
+            <li>
+              Developed and deployed a simple interest calculator in which you
+              could enter the years-time, amount of money and porcentage. It
+              returned the simple interest with those characteristics.
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>Solar system Website</h3>
+          <ul>
+            <li>
+              Created a website where there was a solar system photo and a
+              little description about it and a table with information.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear: both"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear: both"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Ale aprende muy rápido y capta rápidamente los conceptos clave de la
+          Web. desarrollo. Tiene una gran actitud y es un excelente equipo.
+          jugador. Tiene una mente curiosa y hace la pregunta correcta. Ella
+          toma iniciativa dentro de un equipo y tiene potencial para liderar el
+          equipo.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Trabajar con Ale ha sido una experiencia increíble. ella es altamente
+          conocedor y siempre va un paso más allá para asegurarse de que todo
+          esté bien. Para cualquier proyecto futuro que necesite su experiencia,
+          me gustaría Definitivamente quiero volver a trabajar con ella.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Trabajé junto con Ale durante la fase inicial de nuestra empresa. que
+          necesitaba desarrollo Web. Ella es un recurso comprometido que tiene
+          en conocimiento profundo sobre el dominio. Ella será un activo para
+          cualquier ¡organización!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>
+          <input type="text" placeholder="Name (Optional)" /> <br />
+          <textarea
+            id="new_recommendation"
+            cols="500"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">
+              Submit
+            </button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          width="63px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="Nuevarecomend.png" width="100px" />
+      <h3>Thanks very much :)</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
